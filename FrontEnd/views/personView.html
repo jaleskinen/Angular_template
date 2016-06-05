@@ -3,7 +3,7 @@
 <!--//Use as class-->
 <div class="nav-bar"></div>
 <!--//Use as attribute-->
-<div of-example names="name" users="userData"></div>
+<div of-example names="name" users="personData"></div>
 
 <div class="container">
     <div class="row">
@@ -26,7 +26,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr ng-repeat='person in userData' ng-click='rowCliked(person._id)'>
+                        <tr ng-repeat='person in personData' ng-click='rowCliked(person._id)'>
                             <td>{{person.name}}</td>
                             <td>{{person.address}}</td>
                             <!--<td>{{person.age}}</td>-->
@@ -54,7 +54,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr ng-repeat='person in userData' ng-click='rowCliked(person._id)'>
+                        <tr ng-repeat='person in personData' ng-click='rowCliked(person._id)'>
                             <td>{{person.name}}</td>
                             <!--<td>{{person.address}}</td>-->
                             <td>{{person.age}}</td>
