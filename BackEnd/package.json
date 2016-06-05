@@ -1,0 +1,34 @@
+{
+  "name": "angulartemplate",
+  "version": "1.0.0",
+  "description": "Angular Template",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "jsonwebtoken": "^5.5.4",
+    "mysql": "^2.10.2",
+    "uuid": "^2.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaleskinen/Angular_template.git"
+  },
+  "keywords": [
+    "Angular",
+    "Node.js",
+    "MySQL"
+  ],
+  "author": "Jarmo Leskinen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaleskinen/Angular_template/issues"
+  },
+  "homepage": "https://github.com/jaleskinen/Angular_template#readme"
+}

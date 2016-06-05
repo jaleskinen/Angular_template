@@ -1,0 +1,99 @@
+<!--<ng-include src="'navbar.html'"></ng-include>-->
+
+<!--//Use as class-->
+<div class="nav-bar"></div>
+<!--//Use as attribute-->
+<div of-example names="name" users="userData"></div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class='table_container'>
+                <h1><center><u>Address</u></center></h1>
+                <p>To edit information, click the row</p>
+                <!--<p>Search persons...empty search will fetch all your friends</p>
+                <input type="search" class="form-control" value="Search" ng-model='search_term'/><br/>
+                <button class="btn btn-default" value="Search" ng-click='search()'>
+                    <span class="glyphicon glyphicon-search"></span>
+                    Search
+                </button>-->
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <!--<th>Age</th>-->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat='person in userData' ng-click='rowCliked(person._id)'>
+                            <td>{{person.name}}</td>
+                            <td>{{person.address}}</td>
+                            <!--<td>{{person.age}}</td>-->
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class='table_container'>
+                <h1><center><u>Age</u></center></h1>
+                <p>To edit information, click the row</p>
+                <!--<p>Search persons...empty search will fetch all your friends</p>
+                <input type="search" class="form-control" value="Search" ng-model='search_term'/><br/>
+                <button class="btn btn-default" value="Search" ng-click='search()'>
+                    <span class="glyphicon glyphicon-search"></span>
+                    Search
+                </button>-->
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <!--<th>Address</th>-->
+                            <th>Age</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat='person in userData' ng-click='rowCliked(person._id)'>
+                            <td>{{person.name}}</td>
+                            <!--<td>{{person.address}}</td>-->
+                            <td>{{person.age}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class='table_container'>
+                <h1><center><u>Search</u></center></h1>
+                <!--<p>To edit information, click the row</p>-->
+                <p>Search persons...empty search will fetch all your friends</p>
+                <input type="search" class="form-control" value="Search" ng-model='search_term'/><br/>
+                <center><button class="btn btn-primary" value="Search" ng-click='search()'>
+                    <span class="glyphicon glyphicon-search"></span>
+                    Search
+                    </button>
+                <button class="btn btn-primary" value="showAll" ng-click='showAll()'>
+                    <span class="glyphicon glyphicon-search"></span>
+                    Reset
+                </button></center>
+                <!--<table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Age</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat='person in friendData' ng-click='rowCliked(person._id)'>
+                            <td>{{person.name}}</td>
+                            <td>{{person.address}}</td>
+                            <td>{{person.age}}</td>
+                        </tr>
+                    </tbody>
+                </table>-->
+            </div>
+        </div>
+    </div>
+</div>

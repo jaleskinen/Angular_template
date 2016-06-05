@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app='main_module'>
+    <head>
+        <meta charset="utf-8">
+        <title>Angular Front End</title>
+        <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+        <link href="/FrontEnd/css/angular-flash.min.css">
+        <link href="/FrontEnd/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+        <link href="/FrontEnd/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+        <link href="/FrontEnd/css/styles.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <!--<ng-include src="'navbar.html'"></ng-include>-->
+        <!--This is a placeholder for our views in this app-->
+        <div ng-view></div>
+        <script src="/FrontEnd/lib/jquery-2.2.4.min.js"></script>
+        <script src="/FrontEnd/lib/bootstrap.min.js"></script>
+        <script src="/FrontEnd/lib/angular.min.js"></script>
+        <script src="/FrontEnd/lib/angular-route.min.js"></script>
+        <script src="/FrontEnd/lib/angular-resource.min.js"></script>
+        <script src="/FrontEnd/lib/angular-flash.min.js"></script>
+        <script src="/FrontEnd/module/mainModule.js"></script>
+        <script src="/FrontEnd/controllers/loginController.js"></script>
+        <script src="/FrontEnd/factories/loginFactory.js"></script>
+        <script src="/FrontEnd/controllers/personController.js"></script>
+        <script src="/FrontEnd/factories/personFactory.js"></script>
+ <!--       <script src="/FrontEnd/controllers/editController.js"></script>
+        <script src="/FrontEnd/controllers/deleteController.js"></script>
+        <script src="/FrontEnd/controllers/addController.js"></script>-->
+        <script src="/FrontEnd/directives/navbar_directive.js"></script>
+    </body>
+</html>
