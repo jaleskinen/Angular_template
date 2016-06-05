@@ -1,0 +1,47 @@
+html,body{
+    
+    max-width: 100%;
+    width: 100%;
+}
+
+.loginForm{
+    
+    width: 400px;
+    margin: 30px auto;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: lightblue;
+}
+
+.table_container
+{
+    
+    border: 3px solid black;
+    border-radius: 25px;
+    margin: auto;
+    padding: 12px;
+}
+
+.flash-style{
+    
+    width: 30%;
+    margin: auto 0;
+    position: absolute;
+    top: 10%;
+    left: 450px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
